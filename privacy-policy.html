@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chameleon — Privacy Policy</title>
+
+    <meta name="description"
+        content="Privacy Policy for Chameleon, an AI-assisted desktop application for app development.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: #18181b;
+            background: #fafafa;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        /* NAV */
+
+        nav {
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e4e4e7;
+            background: rgba(250, 250, 250, 0.9);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-inner {
+            width: min(1120px, calc(100% - 40px));
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 9px;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 14px;
+            color: #52525b;
+        }
+
+        .nav-links a:hover {
+            color: #18181b;
+        }
+
+        .nav-button {
+            padding: 9px 15px;
+            border-radius: 9px;
+            background: #18181b;
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .nav-button:hover {
+            background: #27272a;
+        }
+
+        /* HERO */
+
+        .hero {
+            padding: 105px 0 90px;
+            text-align: center;
+        }
+
+        h1 {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.02;
+            letter-spacing: -0.055em;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: #71717a;
+        }
+
+        .hero-description {
+            max-width: 650px;
+            margin: 25px auto 0;
+            color: #71717a;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 34px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.15s ease;
+        }
+
+        .button-primary {
+            background: #18181b;
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #27272a;
+            transform: translateY(-1px);
+        }
+
+        .button-secondary {
+            background: white;
+            border: 1px solid #d4d4d8;
+            color: #27272a;
+        }
+
+        .button-secondary:hover {
+            background: #f4f4f5;
+        }
+
+        /* APP PREVIEW */
+
+        .app-preview {
+            border: 1px solid #d4d4d8;
+            border-radius: 8px;
+            margin-top: 70px;
+            width: 100%;
+            background: white;
+            overflow: hidden;
+            box-shadow:
+                0 25px 60px rgba(0, 0, 0, 0.08),
+                0 4px 12px rgba(0, 0, 0, 0.04);
+            text-align: left;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-header {
+            max-width: 650px;
+            margin-bottom: 45px;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #71717a;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: clamp(30px, 5vw, 44px);
+            letter-spacing: -0.04em;
+            line-height: 1.1;
+        }
+
+        .section-description {
+            color: #71717a;
+            margin-top: 14px;
+            font-size: 16px;
+        }
+
+        /* PRIVACY POLICY */
+
+        .privacy-page {
+            padding: 84px 0 110px;
+        }
+
+        .privacy-header {
+            max-width: 760px;
+            padding-bottom: 54px;
+        }
+
+        .privacy-header h1 {
+            margin-top: 12px;
+            font-size: clamp(42px, 7vw, 68px);
+            text-align: left;
+        }
+
+        .privacy-header .section-description {
+            max-width: 620px;
+        }
+
+        .privacy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            margin-top: 22px;
+            color: #a1a1aa;
+            font-size: 12px;
+        }
+
+        .privacy-layout {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            align-items: start;
+            gap: 64px;
+        }
+
+        .privacy-nav {
+            position: sticky;
+            top: 96px;
+            display: grid;
+            gap: 4px;
+            padding-right: 20px;
+            border-right: 1px solid #e4e4e7;
+        }
+
+        .privacy-nav a {
+            padding: 8px 10px;
+            border-radius: 7px;
+            color: #71717a;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        .privacy-nav a:hover,
+        .privacy-nav a:focus-visible {
+            background: #f4f4f5;
+            color: #18181b;
+        }
+
+        .privacy-content {
+            min-width: 0;
+            max-width: 760px;
+        }
+
+        .privacy-section {
+            padding: 0 0 54px;
+            scroll-margin-top: 96px;
+        }
+
+        .privacy-section+.privacy-section {
+            padding-top: 54px;
+            border-top: 1px solid #e4e4e7;
+        }
+
+        .privacy-section h2 {
+            margin-bottom: 18px;
+            font-size: clamp(24px, 3vw, 32px);
+        }
+
+        .privacy-section h3 {
+            margin: 28px 0 8px;
+            font-size: 15px;
+        }
+
+        .privacy-section p,
+        .privacy-section li {
+            color: #52525b;
+            font-size: 15px;
+        }
+
+        .privacy-section p+p {
+            margin-top: 16px;
+        }
+
+        .privacy-section ul {
+            display: grid;
+            gap: 8px;
+            margin: 12px 0 0 20px;
+        }
+
+        .privacy-contact {
+            margin-top: 18px;
+            padding: 18px 20px;
+            border-left: 3px solid #18181b;
+            background: #f4f4f5;
+        }
+
+        .privacy-contact p+p {
+            margin-top: 6px;
+        }
+
+
+        /* WORKSPACE */
+
+        .workspace {
+            background: white;
+            border-top: 1px solid #e4e4e7;
+            border-bottom: 1px solid #e4e4e7;
+        }
+
+        .workspace-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+        }
+
+        .workspace-card {
+            border: 1px solid #e4e4e7;
+            border-radius: 14px;
+            padding: 22px;
+            background: #fafafa;
+            transition: 0.15s ease;
+        }
+
+        .workspace-card:hover {
+            background: white;
+            border-color: #d4d4d8;
+            transform: translateY(-2px);
+        }
+
+        .workspace-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 9px;
+            background: #18181b;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 15px;
+            margin-bottom: 18px;
+        }
+
+        .workspace-card h3 {
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+
+        .workspace-card p {
+            color: #71717a;
+            font-size: 13px;
+            line-height: 1.65;
+        }
+
+        /* HOW IT WORKS */
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .step {
+            padding: 24px;
+            border: 1px solid #e4e4e7;
+            border-radius: 14px;
+            background: white;
+        }
+
+        .step-number {
+            color: #a1a1aa;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .step h3 {
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .step p {
+            font-size: 13px;
+            color: #71717a;
+        }
+
+        /* PRINCIPLE */
+
+        .principle {
+            background: #18181b;
+            color: white;
+        }
+
+        .principle-inner {
+            max-width: 850px;
+        }
+
+        .principle .eyebrow {
+            color: #a1a1aa;
+        }
+
+        .principle h2 {
+            font-size: clamp(32px, 5vw, 52px);
+        }
+
+        .principle p {
+            margin-top: 22px;
+            max-width: 680px;
+            color: #a1a1aa;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* DOWNLOAD */
+
+        .download {
+            text-align: center;
+        }
+
+        .download-box {
+            border: 1px solid #e4e4e7;
+            border-radius: 18px;
+            background: white;
+            padding: 60px 30px;
+        }
+
+        .download h2 {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .download p {
+            max-width: 550px;
+            margin: 16px auto 28px;
+            color: #71717a;
+        }
+
+        .github-note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #a1a1aa;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #e4e4e7;
+            padding: 28px 0;
+            color: #71717a;
+            font-size: 13px;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a:hover {
+            color: #18181b;
+        }
+
+        /* ROADMAP */
+
+        .roadmap {
+            background: white;
+            border-top: 1px solid #e4e4e7;
+            border-bottom: 1px solid #e4e4e7;
+        }
+
+        .roadmap-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .roadmap-column {
+            border: 1px solid #e4e4e7;
+            border-radius: 14px;
+            background: white;
+            overflow: hidden;
+        }
+
+        .roadmap-column.future {
+            background: #fdfdfd;
+        }
+
+        .roadmap-heading {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 24px;
+            border-bottom: 1px solid #e4e4e7;
+        }
+
+        .roadmap-status {
+            width: 9px;
+            height: 9px;
+            margin-top: 7px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #a1a1aa;
+        }
+
+        .roadmap-status.active {
+            background: #18181b;
+        }
+
+        .roadmap-heading h3 {
+            font-size: 17px;
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        .roadmap-heading p {
+            color: #a1a1aa;
+            font-size: 13px;
+        }
+
+        .roadmap-list {
+            padding: 8px;
+        }
+
+        .roadmap-item {
+            display: grid;
+            grid-template-columns: 34px 1fr;
+            gap: 14px;
+            padding: 18px 16px;
+            border-radius: 9px;
+            transition: background 0.15s ease;
+        }
+
+        .roadmap-item:hover {
+            background: #f4f4f5;
+        }
+
+        .roadmap-number {
+            color: #a1a1aa;
+            font-size: 11px;
+            font-weight: 600;
+            padding-top: 2px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .roadmap-item h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .roadmap-item p {
+            color: #71717a;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+        /* ROADMAP RESPONSIVE */
+
+        @media (max-width: 800px) {
+
+            .roadmap-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            .roadmap-heading {
+                padding: 20px;
+            }
+
+            .roadmap-item {
+                padding: 16px 12px;
+            }
+
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 800px) {
+            .privacy-layout {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .privacy-nav {
+                position: static;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 2px 8px;
+                padding: 12px 0;
+                border-right: 0;
+                border-top: 1px solid #e4e4e7;
+                border-bottom: 1px solid #e4e4e7;
+            }
+
+            .nav-links a:not(.nav-button) {
+                display: none;
+            }
+
+            .mock-app {
+                grid-template-columns: 130px 1fr;
+            }
+
+            .mock-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .privacy-page {
+                padding: 64px 0 78px;
+            }
+
+            .privacy-header {
+                padding-bottom: 36px;
+            }
+
+            .privacy-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .privacy-section {
+                padding-bottom: 40px;
+            }
+
+            .privacy-section+.privacy-section {
+                padding-top: 40px;
+            }
+
+            .hero {
+                padding-top: 75px;
+            }
+
+            .hero-description {
+                font-size: 16px;
+            }
+
+            .mock-sidebar {
+                display: none;
+            }
+
+            .mock-app {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .workspace-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 550px) {
+            .workspace-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <img src="chameleon_logo.png" alt="Chameleon Logo" class="logo">
+                Chameleon
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#workspace">Workspace</a>
+                <a href="index.html#roadmap">Roadmap</a>
+                <a href="https://github.com/MrJaki/chameleon-website" target="_blank" class="nav-button">
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="privacy-page">
+            <div class="container">
+
+                <div class="privacy-header">
+                    <div class="eyebrow">Legal</div>
+                    <h1>Privacy Policy</h1>
+                    <p class="section-description">
+                        How Chameleon processes, stores, and handles your data.
+                    </p>
+
+                    <div class="privacy-meta">
+                        <span>Effective date: 09/04/2026</span>
+                        <span>Last updated: 09/04/2026</span>
+                    </div>
+                </div>
+
+                <div class="privacy-layout">
+
+                    <aside class="privacy-nav" aria-label="Privacy Policy navigation">
+                        <a href="#scope">1. Scope</a>
+                        <a href="#information">2. Information We Process</a>
+                        <a href="#use">3. How We Use Information</a>
+                        <a href="#ai">4. AI &amp; Third-Party Services</a>
+                        <a href="#tracking">5. Analytics &amp; Tracking</a>
+                        <a href="#accounts">6. Authentication &amp; Accounts</a>
+                        <a href="#sharing">7. Data Sharing</a>
+                        <a href="#retention">8. Data Retention</a>
+                        <a href="#security">9. Security</a>
+                        <a href="#choices">10. Your Choices</a>
+                        <a href="#children">11. Children’s Privacy</a>
+                        <a href="#transfers">12. International Transfers</a>
+                        <a href="#changes">13. Changes</a>
+                        <a href="#contact">14. Contact</a>
+                    </aside>
+
+                    <article class="privacy-content">
+
+                        <section class="privacy-section" id="scope">
+                            <h2>1. Scope</h2>
+                            <p>
+                                This Privacy Policy applies to the Chameleon desktop application
+                                and its local application services.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="information">
+                            <h2>2. Information We Process</h2>
+
+                            <h3>A. Information You Provide</h3>
+                            <p>Depending on how you use Chameleon, the application may process:</p>
+
+                            <ul>
+                                <li>Prompts, instructions, and chat messages you enter.</li>
+                                <li>Project names and other project information.</li>
+                                <li>Source code, project files, and project structure that you create, open, edit, or
+                                    provide to Chameleon.</li>
+                                <li>Configuration information you enter into the application, including AI provider
+                                    settings and API credentials.</li>
+                            </ul>
+
+                            <h3>B. Configuration and Technical Information</h3>
+                            <p>
+                                Chameleon may process and locally store technical information
+                                required to operate the application, including:
+                            </p>
+
+                            <ul>
+                                <li>AI provider and endpoint configuration.</li>
+                                <li>Ollama server address or URL.</li>
+                                <li>Selected planning and coding models.</li>
+                                <li>Provider settings.</li>
+                                <li>System checks, such as whether Node.js and npm are installed and their versions.
+                                </li>
+                                <li>Error, debugging, and operational logs generated while using the application.</li>
+                            </ul>
+
+                            <p>
+                                Chameleon does not use this information for advertising or
+                                behavioral tracking.
+                            </p>
+
+                            <h3>C. Locally Stored Data</h3>
+                            <p>
+                                Chameleon stores certain information on your device, which may include:
+                            </p>
+
+                            <ul>
+                                <li>Application configuration stored in a local SQLite database.</li>
+                                <li>AI provider and model configuration.</li>
+                                <li>API credentials or other authentication information required to connect to
+                                    configured AI services.</li>
+                                <li>Prompt template files.</li>
+                                <li>Generated and edited project files.</li>
+                                <li>Application logs and other files required for application functionality.</li>
+                            </ul>
+
+                            <p>
+                                The exact location of these files depends on your operating system
+                                and Chameleon's installation.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="use">
+                            <h2>3. How We Use Information</h2>
+
+                            <p>We process data to:</p>
+
+                            <ul>
+                                <li>Set up and run your local development workspace.</li>
+                                <li>Generate, modify, and debug code based on your prompts.</li>
+                                <li>Show project trees, previews, visual editing controls, and logs.</li>
+                                <li>Save your AI and prompt preferences.</li>
+                                <li>Diagnose issues and improve application reliability.</li>
+                            </ul>
+
+                            <p>
+                                Chameleon does not use your project files or prompts for advertising.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="ai">
+                            <h2>4. AI Processing and Third-Party Services</h2>
+
+                            <p>
+                                Chameleon allows you to configure the AI service or endpoint used
+                                for AI features.
+                            </p>
+
+                            <p>
+                                Depending on your configuration, this may include a locally running
+                                AI service such as Ollama or a remote AI provider.
+                            </p>
+
+                            <p>
+                                When an AI feature is used, Chameleon may send relevant prompts,
+                                project context, source code, project structure, or other
+                                information required to generate a response to the AI endpoint
+                                you have configured.
+                            </p>
+
+                            <h3>Local AI</h3>
+
+                            <p>
+                                If you configure Chameleon to use an AI service running locally on
+                                your device or local network, applicable AI requests may remain
+                                within your local environment and are not sent to Chameleon's
+                                developers.
+                            </p>
+
+                            <h3>Remote AI Services</h3>
+
+                            <p>
+                                If you configure a remote AI provider or server, information
+                                required for the requested AI operation is transmitted to that
+                                service.
+                            </p>
+
+                            <p>
+                                Remote AI providers operate independently from Chameleon and may
+                                process information according to their own privacy policies,
+                                terms, and data-retention practices. You are responsible for
+                                reviewing the privacy practices of any third-party AI service
+                                you choose to use.
+                            </p>
+
+                            <p>
+                                Chameleon does not control how an independently operated remote AI
+                                service processes information after it has been transmitted to
+                                that service.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="tracking">
+                            <h2>5. Analytics, Advertising, and Tracking</h2>
+
+                            <p>
+                                Chameleon does <strong>not</strong> include built-in advertising SDKs.
+                            </p>
+
+                            <p>
+                                Chameleon does <strong>not</strong> include built-in third-party
+                                analytics or behavioral tracking SDKs in the current implementation.
+                            </p>
+
+                            <p>
+                                Chameleon does not sell personal information for advertising purposes.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="accounts">
+                            <h2>6. Authentication and Accounts</h2>
+
+                            <p>
+                                Chameleon currently does not require an in-app user account for
+                                its core functionality and does not maintain an internal user
+                                account system.
+                            </p>
+
+                            <p>
+                                Some AI providers or external services configured by the user may
+                                require their own accounts or authentication credentials. Those
+                                accounts are governed by the respective provider's policies.
+                            </p>
+
+                            <h3>API Keys and Credentials</h3>
+
+                            <p>
+                                When you configure an AI provider requiring an API key or other
+                                credential, Chameleon may store that credential locally on your
+                                device so that the application can make authorized requests.
+                            </p>
+
+                            <p>
+                                Chameleon does not intentionally transmit stored credentials to
+                                the Chameleon developers.
+                            </p>
+
+                            <p>
+                                You are responsible for protecting your device and for managing,
+                                rotating, or revoking credentials through the applicable AI
+                                provider when necessary.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="sharing">
+                            <h2>7. Data Sharing</h2>
+
+                            <p>
+                                Chameleon does not sell your personal information.
+                            </p>
+
+                            <p>
+                                Chameleon does not intentionally provide your project files,
+                                prompts, or locally stored application data to third parties
+                                controlled by Chameleon, except where necessary to operate a
+                                service you have explicitly configured or where required by law.
+                            </p>
+
+                            <p>Information may be transmitted:</p>
+
+                            <ul>
+                                <li>To the AI endpoint or provider you configure and use.</li>
+                                <li>To a remote server you explicitly configure.</li>
+                                <li>Where required by applicable law, regulation, legal process, or valid governmental
+                                    request.</li>
+                                <li>Where reasonably necessary to protect the rights, security, or safety of users, the
+                                    application, or others.</li>
+                            </ul>
+                        </section>
+
+                        <section class="privacy-section" id="retention">
+                            <h2>8. Data Retention</h2>
+
+                            <p>
+                                Chameleon primarily stores application data locally on your device.
+                            </p>
+
+                            <p>
+                                Data may remain on your device for as long as it is required for
+                                application functionality or until you delete it.
+                            </p>
+
+                            <p>You can generally remove locally stored information by:</p>
+
+                            <ul>
+                                <li>Deleting project files.</li>
+                                <li>Removing Chameleon application data from your device.</li>
+                                <li>Uninstalling Chameleon and removing remaining application data.</li>
+                            </ul>
+
+                            <p>
+                                Data transmitted to a third-party AI provider may be retained by
+                                that provider according to its own policies and terms. Chameleon
+                                does not control the retention of data once it has been transmitted
+                                to an independently operated service.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="security">
+                            <h2>9. Security</h2>
+
+                            <p>
+                                Chameleon uses reasonable technical measures intended to protect
+                                locally stored application information and credentials.
+                            </p>
+
+                            <p>
+                                However, no method of storing or transmitting information is
+                                completely secure.
+                            </p>
+
+                            <p>You are responsible for:</p>
+
+                            <ul>
+                                <li>Securing your device.</li>
+                                <li>Protecting your API keys and other credentials.</li>
+                                <li>Securing any remote AI server you configure.</li>
+                                <li>Reviewing the security and privacy practices of third-party services you use with
+                                    Chameleon.</li>
+                            </ul>
+                        </section>
+
+                        <section class="privacy-section" id="choices">
+                            <h2>10. Your Choices and Controls</h2>
+
+                            <p>You can:</p>
+
+                            <ul>
+                                <li>Choose whether to use a local or remote AI endpoint.</li>
+                                <li>Select and change AI providers and models.</li>
+                                <li>Change or remove AI configuration.</li>
+                                <li>Edit or delete local project files.</li>
+                                <li>Remove local application data from your device.</li>
+                                <li>Revoke API keys through the applicable AI provider.</li>
+                            </ul>
+                        </section>
+
+                        <section class="privacy-section" id="children">
+                            <h2>11. Children’s Privacy</h2>
+
+                            <p>
+                                Chameleon is not directed toward children under 13, or the
+                                equivalent minimum age in jurisdictions where a different
+                                minimum applies.
+                            </p>
+
+                            <p>
+                                Chameleon does not knowingly collect personal information from
+                                children through an in-app account system.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="transfers">
+                            <h2>12. International Data Transfers</h2>
+
+                            <p>
+                                If you configure a remote AI endpoint or third-party service
+                                located in another country, information processed through
+                                Chameleon may be transferred to and processed in that country.
+                            </p>
+
+                            <p>
+                                The applicable third-party provider's privacy policy and terms
+                                determine how that provider handles such information.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="changes">
+                            <h2>13. Changes to This Policy</h2>
+
+                            <p>
+                                We may update this Privacy Policy from time to time.
+                            </p>
+
+                            <p>
+                                If material changes are made, we will update the “Last updated”
+                                date and, where appropriate, provide additional notice.
+                            </p>
+                        </section>
+
+                        <section class="privacy-section" id="contact">
+                            <h2>14. Contact</h2>
+
+                            <p>
+                                For questions about this Privacy Policy or Chameleon, you can
+                                contact the developer through:
+                            </p>
+
+                            <div class="privacy-contact">
+                                <p>
+                                    <strong>GitHub:</strong>
+                                    <a href="https://github.com/MrJaki" target="_blank" rel="noopener noreferrer">
+                                        github.com/MrJaki
+                                    </a>
+                                </p>
+
+                                <!-- <p>
+                                    <strong>Email:</strong>
+                                    [Insert Contact Email]
+                                </p> -->
+                            </div>
+                        </section>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    © 2026 Chameleon
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                    <a href="https://github.com/MrJaki/chameleon-website" target="_blank">GitHub</a>
+                    <a href="https://github.com/MrJaki/chameleon-website/issues" target="_blank">Issues</a>
+                    <a href="https://github.com/MrJaki/chameleon-website/releases" target="_blank">Releases</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

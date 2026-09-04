@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chameleon — Terms of Use</title>
+    <meta name="description" content="Terms of Use for Chameleon, an AI-assisted desktop application for app development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: "Inter", sans-serif; color: #18181b; background: #fafafa; line-height: 1.6; }
+        a { color: inherit; text-decoration: none; }
+        .container { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+        nav { height: 72px; display: flex; align-items: center; border-bottom: 1px solid #e4e4e7; background: rgba(250,250,250,.9); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 100; }
+        .nav-inner { width: min(1120px, calc(100% - 40px)); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; letter-spacing: -.02em; }
+        .logo { width: 32px; height: 32px; border-radius: 9px; object-fit: cover; }
+        .nav-links { display: flex; align-items: center; gap: 28px; font-size: 14px; color: #52525b; }
+        .nav-links a:hover, .footer-links a:hover { color: #18181b; }
+        .nav-button { padding: 9px 15px; border-radius: 9px; background: #18181b; color: white !important; font-weight: 500; }
+        .nav-button:hover { background: #27272a; }
+        .terms-page { padding: 84px 0 110px; }
+        .terms-header { max-width: 760px; padding-bottom: 54px; }
+        .eyebrow { font-size: 12px; text-transform: uppercase; letter-spacing: .1em; color: #71717a; font-weight: 600; margin-bottom: 12px; }
+        h1 { margin-top: 12px; font-size: clamp(42px, 7vw, 68px); line-height: 1.02; letter-spacing: -.055em; }
+        .terms-meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-top: 22px; color: #a1a1aa; font-size: 12px; }
+        .terms-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: start; gap: 64px; }
+        .terms-nav { position: sticky; top: 96px; display: grid; gap: 4px; padding-right: 20px; border-right: 1px solid #e4e4e7; }
+        .terms-nav a { padding: 8px 10px; border-radius: 7px; color: #71717a; font-size: 12px; line-height: 1.4; }
+        .terms-nav a:hover, .terms-nav a:focus-visible { background: #f4f4f5; color: #18181b; }
+        .terms-content { min-width: 0; max-width: 760px; }
+        .terms-section { padding: 0 0 54px; scroll-margin-top: 96px; }
+        .terms-section + .terms-section { padding-top: 54px; border-top: 1px solid #e4e4e7; }
+        .terms-section h2 { margin-bottom: 18px; font-size: clamp(24px, 3vw, 32px); line-height: 1.1; letter-spacing: -.04em; }
+        .terms-section h3 { margin: 28px 0 8px; font-size: 15px; }
+        .terms-section p, .terms-section li { color: #52525b; font-size: 15px; }
+        .terms-section p + p { margin-top: 16px; }
+        .terms-section ul, .terms-section ol { display: grid; gap: 8px; margin: 12px 0 0 20px; }
+        .terms-section strong { color: #18181b; }
+        .terms-contact { margin-top: 18px; padding: 18px 20px; border-left: 3px solid #18181b; background: #f4f4f5; }
+        .terms-contact p + p { margin-top: 6px; }
+        footer { border-top: 1px solid #e4e4e7; padding: 28px 0; color: #71717a; font-size: 13px; }
+        .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+        .footer-links { display: flex; gap: 20px; }
+        @media (max-width: 800px) {
+            .terms-layout { grid-template-columns: 1fr; gap: 32px; }
+            .terms-nav { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 8px; padding: 12px 0; border-right: 0; border-top: 1px solid #e4e4e7; border-bottom: 1px solid #e4e4e7; }
+            .nav-links a:not(.nav-button) { display: none; }
+        }
+        @media (max-width: 550px) {
+            .container, .nav-inner { width: min(100% - 32px, 1120px); }
+            .terms-page { padding: 64px 0 78px; }
+            .terms-header { padding-bottom: 36px; }
+            .terms-nav { grid-template-columns: 1fr; }
+            .terms-section { padding-bottom: 40px; }
+            .terms-section + .terms-section { padding-top: 40px; }
+            .footer-inner { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <img src="chameleon_logo.png" alt="Chameleon Logo" class="logo">
+                Chameleon
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#workspace">Workspace</a>
+                <a href="index.html#roadmap">Roadmap</a>
+                <a href="https://github.com/MrJaki/chameleon-website" target="_blank" rel="noopener noreferrer" class="nav-button">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="terms-page">
+            <div class="container">
+                <header class="terms-header">
+                    <div class="eyebrow">Legal</div>
+                    <h1>Terms of Use</h1>
+                    <div class="terms-meta"><span>Last updated: September 4, 2026</span></div>
+                </header>
+
+                <div class="terms-layout">
+                    <aside class="terms-nav" aria-label="Terms of Use navigation">
+                        <a href="#acceptance">1. Acceptance</a>
+                        <a href="#what-chameleon-is">2. What Chameleon Is</a>
+                        <a href="#eligibility">3. Eligibility</a>
+                        <a href="#license">4. License</a>
+                        <a href="#projects">5. Projects and Files</a>
+                        <a href="#ai-output">6. AI-Generated Content</a>
+                        <a href="#harmful-output">7. Harmful Output</a>
+                        <a href="#commands">8. System Operations</a>
+                        <a href="#accuracy">9. AI Accuracy</a>
+                        <a href="#third-party-ai">10. Third-Party AI</a>
+                        <a href="#local-ai">11. Local AI</a>
+                        <a href="#credentials">12. Credentials</a>
+                        <a href="#security">13. Security</a>
+                        <a href="#acceptable-use">14. Acceptable Use</a>
+                        <a href="#intellectual-property">15. Intellectual Property</a>
+                        <a href="#third-party-software">16. Third-Party Software</a>
+                        <a href="#dependencies">17. Dependencies</a>
+                        <a href="#ai-ip">18. AI Output IP</a>
+                        <a href="#professional-advice">19. Professional Advice</a>
+                        <a href="#availability">20. Availability</a>
+                        <a href="#warranty">21. No Warranty</a>
+                        <a href="#liability">22. Liability</a>
+                        <a href="#indemnification">23. Indemnification</a>
+                        <a href="#privacy">24. Data and Privacy</a>
+                        <a href="#backups">25. Backups</a>
+                        <a href="#termination">26. Termination</a>
+                        <a href="#governing-law">27. Governing Law</a>
+                        <a href="#consumer-rights">28. Consumer Rights</a>
+                        <a href="#changes">29. Changes</a>
+                        <a href="#severability">30. Severability</a>
+                        <a href="#entire-agreement">31. Entire Agreement</a>
+                        <a href="#contact">32. Contact</a>
+                    </aside>
+
+                    <article class="terms-content">
+                        <section class="terms-section" id="acceptance"><h2>1. Acceptance of These Terms</h2><p>These Terms of Use ("Terms") govern your access to and use of the <strong>Chameleon</strong> desktop application, related software, documentation, websites, and associated services (collectively, "Chameleon", "the Application", or "the Service").</p><p>By downloading, installing, accessing, or using Chameleon, you agree to these Terms.</p><p>If you do not agree to these Terms, you must not download, install, access, or use Chameleon.</p><p>If you use Chameleon on behalf of an organization, company, school, or other legal entity, you represent that you have the authority to accept these Terms on its behalf. In that case, "you" includes that entity.</p></section>
+                        <section class="terms-section" id="what-chameleon-is"><h2>2. What Chameleon Is</h2><p>Chameleon is a desktop development environment that provides tools for creating, modifying, analyzing, previewing, and debugging software projects using artificial intelligence and other development technologies.</p><p>Depending on the version and configuration, Chameleon may provide functionality including:</p><ul><li>AI-assisted application generation.</li><li>AI-assisted source-code modification.</li><li>AI-assisted debugging.</li><li>Natural-language instructions for software development.</li><li>Project file and directory management.</li><li>Code previews and development servers.</li><li>Visual editing tools.</li><li>Local development tooling.</li><li>Integration with locally hosted AI models.</li><li>Integration with third-party remote AI providers.</li><li>Integration with developer tools such as Node.js, npm, Git, or other software.</li></ul><p>Features may change, be added, or be removed between versions.</p></section>
+                        <section class="terms-section" id="eligibility"><h2>3. Eligibility</h2><p>You may use Chameleon only if you are legally permitted to enter into these Terms.</p><p>If you are under the minimum age required to enter into a legally binding agreement in your jurisdiction, you must have permission from a parent or legal guardian where required by applicable law.</p><p>Chameleon is primarily intended for software development and is not specifically designed for children.</p></section>
+                        <section class="terms-section" id="license"><h2>4. License to Use Chameleon</h2><p>Subject to your compliance with these Terms and any applicable software license accompanying a particular version of Chameleon, you may download and use Chameleon for lawful purposes.</p><p>Unless expressly stated otherwise, these Terms do not transfer ownership of Chameleon or its underlying intellectual property to you.</p><p>You may not claim ownership of Chameleon's source code, trademarks, branding, documentation, or other intellectual property belonging to the Chameleon developers except where a separate applicable license expressly grants you those rights.</p><p>If Chameleon is distributed under an open-source license, that license governs the portions of the software covered by it. Nothing in these Terms is intended to restrict rights granted to you under an applicable open-source license.</p></section>
+                        <section class="terms-section" id="projects"><h2>5. Your Projects and Files</h2><p>Chameleon may access files and directories that you explicitly open, create, modify, or provide to the Application.</p><p>You retain ownership of your own projects, source code, files, and other content that you create or provide to Chameleon, subject to the rights of third parties whose content or software you may use.</p><p>You are responsible for ensuring that you have the necessary rights and permissions to use any files, source code, data, images, libraries, or other materials that you provide to Chameleon.</p><p>You are also responsible for maintaining appropriate backups of important files.</p><p>Chameleon is a development tool and should not be treated as a backup service.</p></section>
+                        <section class="terms-section" id="ai-output"><h2>6. AI-Generated Content and Code</h2><p>Chameleon may use artificial intelligence to generate, modify, explain, analyze, or otherwise process software code and other content.</p><p>AI-generated output may be:</p><ul><li>Incorrect.</li><li>Incomplete.</li><li>Insecure.</li><li>Outdated.</li><li>Incompatible with your project.</li><li>Inconsistent with your requirements.</li><li>Subject to third-party intellectual-property rights.</li><li>Missing required functionality.</li><li>Contain security vulnerabilities.</li><li>Contain malicious or destructive functionality.</li><li>Contain inaccurate or misleading information.</li></ul><p><strong>AI output should not be assumed to be correct, secure, or production-ready.</strong></p><p>You are solely responsible for reviewing, testing, validating, and approving any output generated through Chameleon before using, deploying, distributing, or executing it.</p><p>You should independently verify important code, dependencies, configurations, commands, security mechanisms, and other generated content.</p></section>
+                        <section class="terms-section" id="harmful-output"><h2>7. Generated Malware, Malicious Code, and Harmful Output</h2><p>Because Chameleon can generate executable software and commands, AI-generated output may potentially contain functionality that is harmful, insecure, destructive, or malicious, whether intentionally or unintentionally.</p><p>Chameleon does not guarantee that generated code or other output will be free from:</p><ul><li>Malware.</li><li>Viruses.</li><li>Trojans.</li><li>Ransomware.</li><li>Spyware.</li><li>Backdoors.</li><li>Security vulnerabilities.</li><li>Destructive commands.</li><li>Malicious dependencies.</li><li>Vulnerable dependencies.</li><li>Credential-exfiltration functionality.</li><li>Other harmful functionality.</li></ul><p>You are responsible for reviewing generated code before executing or deploying it.</p><p><strong>To the maximum extent permitted by applicable law, the Chameleon developers are not responsible for damage, loss, security incidents, data loss, system compromise, unauthorized access, malware infection, or other harm resulting from code, commands, scripts, dependencies, configurations, or other output generated or modified through Chameleon.</strong></p><p>This limitation does not exclude liability that cannot legally be excluded or limited under applicable law.</p></section>
+                        <section class="terms-section" id="commands"><h2>8. Generated Commands and System Operations</h2><p>Chameleon may generate commands, scripts, configuration files, or other instructions capable of interacting with your operating system, files, network, development environment, or other resources.</p><p>Such operations may potentially:</p><ul><li>Create, modify, or delete files.</li><li>Install software or dependencies.</li><li>Start or stop processes.</li><li>Access network resources.</li><li>Modify project configuration.</li><li>Consume system resources.</li><li>Change system settings.</li><li>Cause unintended changes or data loss.</li></ul><p>You are responsible for reviewing commands and operations before allowing them to execute when the Application provides you with the opportunity to do so.</p><p>You should not execute commands generated by an AI system unless you understand their purpose and potential effects.</p></section>
+                        <section class="terms-section" id="accuracy"><h2>9. No Guarantee of AI Accuracy</h2><p>AI systems are probabilistic technologies and may produce inaccurate, incomplete, unexpected, or inappropriate results.</p><p>Chameleon does not guarantee that AI-generated output will:</p><ul><li>Meet your requirements.</li><li>Compile or execute correctly.</li><li>Be free from errors.</li><li>Be secure.</li><li>Be compatible with a particular operating system or environment.</li><li>Be compatible with a particular version of a framework or dependency.</li><li>Be legally permissible for your intended use.</li><li>Be free from third-party intellectual-property claims.</li></ul><p>You remain responsible for the final software and decisions you make based on AI-generated output.</p></section>
+                        <section class="terms-section" id="third-party-ai"><h2>10. Third-Party AI Providers</h2><p>Chameleon may allow you to connect to third-party AI providers or servers.</p><p>Depending on your configuration, these services may include remote AI APIs or locally operated AI systems.</p><p>When you use a remote AI provider, information required to perform the requested operation may be transmitted to that provider.</p><p>Third-party AI providers operate independently from Chameleon.</p><p>Their services may be subject to separate:</p><ul><li>Terms of service.</li><li>Privacy policies.</li><li>Acceptable-use policies.</li><li>Data-retention policies.</li><li>Security practices.</li><li>Usage limits.</li><li>Pricing.</li><li>Licensing requirements.</li></ul><p>You are responsible for reviewing and complying with the applicable terms of any third-party service you connect to Chameleon.</p><p>Chameleon does not guarantee the availability, accuracy, security, performance, or behavior of third-party AI services.</p></section>
+                        <section class="terms-section" id="local-ai"><h2>11. Local AI</h2><p>Chameleon may support locally hosted AI services, including software such as Ollama or other compatible endpoints.</p><p>When using a local AI service, requests may be processed within your own device or local network.</p><p>However, Chameleon does not control the behavior, security, configuration, or software used by such third-party local AI services.</p><p>You are responsible for securing any local or network-accessible AI endpoint that you configure.</p></section>
+                        <section class="terms-section" id="credentials"><h2>12. API Keys and Credentials</h2><p>You may configure Chameleon using API keys, authentication tokens, passwords, endpoints, or other credentials required by third-party services.</p><p>You are responsible for:</p><ul><li>Providing valid credentials.</li><li>Keeping credentials confidential.</li><li>Restricting access to your device.</li><li>Rotating compromised credentials.</li><li>Revoking credentials when necessary.</li><li>Complying with the applicable provider's requirements.</li></ul><p>You must not provide Chameleon with credentials that you are not authorized to use.</p><p>You should never intentionally expose API keys or other secrets in publicly accessible source code, repositories, logs, screenshots, prompts, or other content.</p></section>
+                        <section class="terms-section" id="security"><h2>13. Security Responsibilities</h2><p>You are responsible for maintaining the security of your development environment.</p><p>This includes, where applicable:</p><ul><li>Keeping your operating system updated.</li><li>Keeping Chameleon updated.</li><li>Reviewing generated code.</li><li>Reviewing dependencies.</li><li>Scanning software for vulnerabilities and malware.</li><li>Protecting API keys and credentials.</li><li>Maintaining backups.</li><li>Restricting network access.</li><li>Securing development servers.</li><li>Using appropriate authentication.</li><li>Avoiding execution of untrusted code on sensitive systems.</li></ul><p>Chameleon is not a replacement for professional security testing, code review, malware scanning, penetration testing, or other security controls.</p></section>
+                        <section class="terms-section" id="acceptable-use"><h2>14. Acceptable Use</h2><p>You may use Chameleon only for lawful purposes.</p><p>You must not use Chameleon to:</p><ol><li>Violate applicable laws or regulations.</li><li>Gain unauthorized access to computer systems, networks, accounts, or data.</li><li>Deploy malware or ransomware against systems without authorization.</li><li>Steal credentials, authentication tokens, or other secrets.</li><li>Conduct unauthorized surveillance.</li><li>Distribute malicious software.</li><li>Conduct unauthorized denial-of-service attacks.</li><li>Damage or intentionally disrupt computer systems.</li><li>Facilitate fraud, theft, or other unlawful activity.</li><li>Circumvent security controls without authorization.</li><li>Infringe intellectual-property rights.</li><li>Process personal information unlawfully.</li><li>Abuse third-party AI services.</li><li>Circumvent usage limits, authentication mechanisms, or access controls of third-party services.</li><li>Use Chameleon to facilitate activities that are illegal or unauthorized in the jurisdiction where they occur.</li></ol><p>Nothing in these Terms prohibits legitimate security research, testing, education, or development performed with appropriate authorization.</p></section>
+                        <section class="terms-section" id="intellectual-property"><h2>15. Intellectual Property</h2><p>Chameleon, including its original source code, branding, logos, documentation, interface design, and other materials created by the Chameleon developers, may be protected by copyright, trademark, and other intellectual-property laws.</p><p>Unless a separate license states otherwise, these rights remain with their respective owners.</p><p>You may not remove copyright notices, license notices, or other attribution requirements from Chameleon or third-party software where prohibited by the applicable license.</p></section>
+                        <section class="terms-section" id="third-party-software"><h2>16. Third-Party Software</h2><p>Chameleon may contain or depend upon third-party software, libraries, frameworks, or other components.</p><p>Such components may be distributed under their own licenses.</p><p>Those licenses may grant you rights or impose obligations independently of these Terms.</p><p>Where required, applicable third-party license notices will be made available with the relevant Chameleon distribution or through the Chameleon project repository.</p><p>You are responsible for complying with applicable third-party licenses when distributing software created using Chameleon.</p></section>
+                        <section class="terms-section" id="dependencies"><h2>17. Your Responsibility for Dependencies</h2><p>AI-generated projects may use third-party packages, libraries, frameworks, APIs, fonts, images, datasets, or other resources.</p><p>You are responsible for reviewing the dependencies used by your projects.</p><p>You should verify:</p><ul><li>Their licenses.</li><li>Their security status.</li><li>Their source.</li><li>Their compatibility.</li><li>Their maintenance status.</li><li>Their suitability for your intended use.</li></ul><p>Chameleon does not guarantee that AI-generated projects use dependencies that are appropriate for your particular legal, security, or commercial requirements.</p></section>
+                        <section class="terms-section" id="ai-ip"><h2>18. Intellectual Property in AI Output</h2><p>AI-generated output may not always be eligible for copyright protection, and AI-generated output may potentially resemble or incorporate material created by third parties.</p><p>Chameleon does not guarantee that AI-generated output is free from third-party intellectual-property claims.</p><p>You are responsible for determining whether generated content is appropriate for your intended use and whether additional permissions, licenses, attribution, or other legal requirements apply.</p></section>
+                        <section class="terms-section" id="professional-advice"><h2>19. No Professional Advice</h2><p>Chameleon and its AI features provide software-development assistance.</p><p>They do not provide professional legal, financial, cybersecurity, medical, or other regulated professional advice.</p><p>You should obtain appropriate professional advice when required.</p></section>
+                        <section class="terms-section" id="availability"><h2>20. Availability and Changes</h2><p>Chameleon is provided as a software application that may be updated from time to time.</p><p>We may:</p><ul><li>Add features.</li><li>Remove features.</li><li>Change functionality.</li><li>Fix bugs.</li><li>Change supported platforms.</li><li>Change supported AI providers.</li><li>Change integrations.</li><li>Release security updates.</li><li>Discontinue particular functionality.</li></ul><p>We do not guarantee that a particular feature will remain available indefinitely.</p><p>Third-party services integrated with Chameleon may also change or become unavailable without our control.</p></section>
+                        <section class="terms-section" id="warranty"><h2>21. No Warranty</h2><p><strong>To the maximum extent permitted by applicable law, Chameleon is provided on an "as is" and "as available" basis.</strong></p><p>To the maximum extent permitted by applicable law, we make no warranties or representations that Chameleon will:</p><ul><li>Be uninterrupted.</li><li>Be error-free.</li><li>Be secure.</li><li>Be compatible with your system.</li><li>Meet your particular requirements.</li><li>Produce accurate AI output.</li><li>Produce secure code.</li><li>Produce production-ready software.</li><li>Remain available indefinitely.</li><li>Be free from harmful or malicious output.</li></ul><p>You use Chameleon at your own risk.</p><p>Nothing in these Terms excludes or limits warranties or statutory rights that cannot legally be excluded or limited.</p></section>
+                        <section class="terms-section" id="liability"><h2>22. Limitation of Liability</h2><p>To the maximum extent permitted by applicable law, the Chameleon developers and contributors will not be liable for indirect, incidental, special, consequential, exemplary, or punitive damages arising from or relating to your use of Chameleon.</p><p>This may include, to the extent legally permitted:</p><ul><li>Loss of data.</li><li>Loss of profits.</li><li>Loss of revenue.</li><li>Loss of business.</li><li>Loss of software or source code.</li><li>System damage.</li><li>Security incidents.</li><li>Malware infections.</li><li>Unauthorized access.</li><li>Service interruptions.</li><li>Loss resulting from AI-generated code.</li><li>Loss resulting from third-party AI providers.</li><li>Loss resulting from third-party software or dependencies.</li></ul><p>Where liability cannot legally be excluded, it will be limited to the maximum extent permitted by applicable law.</p><p>Nothing in these Terms excludes liability that cannot legally be excluded, including any mandatory liability imposed by applicable law.</p></section>
+                        <section class="terms-section" id="indemnification"><h2>23. Indemnification</h2><p>To the maximum extent permitted by applicable law, you agree to defend, indemnify, and hold harmless the Chameleon developers and contributors from claims, damages, liabilities, costs, and expenses arising from:</p><ul><li>Your unlawful use of Chameleon.</li><li>Your violation of these Terms.</li><li>Your violation of another person's rights.</li><li>Your misuse of generated code.</li><li>Your deployment of software generated through Chameleon.</li><li>Your violation of third-party AI provider terms.</li><li>Your violation of applicable third-party software licenses.</li></ul><p>This section applies only to the extent permitted by applicable law.</p></section>
+                        <section class="terms-section" id="privacy"><h2>24. Data and Privacy</h2><p>Your use of Chameleon is also subject to our <strong><a href="privacy-policy.html">Privacy Policy</a></strong>, which explains how Chameleon processes information.</p><p>The Privacy Policy does not replace these Terms.</p><p>If there is a conflict between these Terms and the Privacy Policy concerning privacy or personal-data processing, the Privacy Policy will govern that specific matter.</p></section>
+                        <section class="terms-section" id="backups"><h2>25. Backups and Data Loss</h2><p>Chameleon is not a backup service.</p><p>You are responsible for maintaining backups of important projects, source code, credentials, configuration, and other data.</p><p>To the maximum extent permitted by applicable law, we are not responsible for loss of data resulting from:</p><ul><li>Application errors.</li><li>AI-generated operations.</li><li>User actions.</li><li>Operating-system failures.</li><li>Hardware failures.</li><li>File-system failures.</li><li>Third-party software.</li><li>Third-party services.</li><li>Malware.</li><li>Incorrect commands.</li><li>Project configuration.</li></ul><p>You should maintain independent backups of important work.</p></section>
+                        <section class="terms-section" id="termination"><h2>26. Termination</h2><p>You may stop using Chameleon at any time.</p><p>We may discontinue or restrict access to associated online services, if any, where reasonably necessary for security, legal, operational, or other legitimate reasons.</p><p>Because Chameleon is primarily a desktop application, uninstalling the Application generally stops your use of the Application, but may not automatically delete every project or configuration file stored on your device.</p><p>You are responsible for removing local application data if you want it deleted.</p></section>
+                        <section class="terms-section" id="governing-law"><h2>27. Governing Law</h2><p>These Terms shall be governed by the laws applicable in the jurisdiction of the Chameleon developer, unless mandatory provisions of applicable law provide otherwise.</p><p>If the Chameleon developer is established in Slovenia, Slovenian law may apply, subject to applicable European Union law and mandatory consumer-protection provisions.</p><p>Any dispute shall be subject to the jurisdiction of the competent courts, except where mandatory law provides consumers or other parties with different rights.</p><p><strong>This section should be finalized based on the actual legal entity/person publishing Chameleon.</strong></p></section>
+                        <section class="terms-section" id="consumer-rights"><h2>28. Consumer Rights</h2><p>If you are a consumer, nothing in these Terms is intended to remove or restrict mandatory consumer rights granted to you under applicable law.</p><p>Where applicable law provides rights that cannot be waived by contract, those rights remain unaffected by these Terms.</p></section>
+                        <section class="terms-section" id="changes"><h2>29. Changes to These Terms</h2><p>We may update these Terms from time to time.</p><p>When changes are made, we may update the <strong>"Last updated"</strong> date.</p><p>Where appropriate, material changes may also be communicated through the Chameleon website, Application, repository, release notes, or another reasonable method.</p><p>Your continued use of Chameleon after the updated Terms become effective constitutes acceptance of the updated Terms to the extent permitted by applicable law.</p></section>
+                        <section class="terms-section" id="severability"><h2>30. Severability</h2><p>If any provision of these Terms is found to be invalid, unlawful, or unenforceable, that provision shall be enforced to the maximum extent permitted by law, and the remaining provisions shall remain in effect.</p></section>
+                        <section class="terms-section" id="entire-agreement"><h2>31. Entire Agreement</h2><p>These Terms, together with the Privacy Policy and any applicable software licenses or additional terms referenced by Chameleon, constitute the agreement governing your use of Chameleon, except where additional terms expressly apply.</p></section>
+                        <section class="terms-section" id="contact"><h2>32. Contact</h2><p>If you have questions regarding these Terms or Chameleon, you can contact the developer through:</p><div class="terms-contact"><p><strong>GitHub:</strong> <a href="https://github.com/MrJaki" target="_blank" rel="noopener noreferrer">https://github.com/MrJaki</a></p></div></section>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div>© 2026 Chameleon</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-use.html">Terms of Use</a>
+                    <a href="https://github.com/MrJaki/chameleon-website" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://github.com/MrJaki/chameleon-website/issues" target="_blank" rel="noopener noreferrer">Issues</a>
+                    <a href="https://github.com/MrJaki/chameleon-website/releases" target="_blank" rel="noopener noreferrer">Releases</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
